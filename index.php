@@ -1,5 +1,6 @@
 <?php
 
+include("funciones.php");
 echo("Clase 4 bucles, Arreglos y funciones");
 
 //Array indexado
@@ -58,6 +59,51 @@ foreach($arreglo as $clave=>$valor){
     echo "<br> El valor del cajon es: ".$clave;
     echo "<br> El valor del cajon es: ".$valor;
 }
+
+// arreglo multidimensional (arreglo de arreglos)
+echo("<br>.................................");
+$usuario=array(
+'usuario1'=>array('nombre'=>"juan",'edad'=>20,'genero'=>"M"),
+'usuario2'=>array('nombre'=>"matilde",'edad'=>30,'genero'=>"F"),
+'usuario3'=>array('nombre'=>"simon",'edad'=>32,'genero'=>"M"),
+'usuario4'=>array('nombre'=>"alejandro",'edad'=>25,'genero'=>"M"),
+'usuario5'=>array('nombre'=>"maria",'edad'=>40,'genero'=>"F")
+
+);
+foreach($arreglo as $clave=>$usuario){
+    
+}
+
+echo("<br>.................................");
+
+//Funciones
+//Calcular la edad de dos personas
+//para llamar la funcion
+//funcion con un parametro fijo en la misma funcion, donde solo ingreso un argumento
+
+calcularedad(1996);
+
+
+
+echo("<br><br>................................<br><br>");
+
+//funcion donde se ingresan dos o mas argumentos
+
+calcularedad2(1996,2020);
+
+echo("<br><br>................................<br><br>");
+
+$edad3=calcularedad3(1996,2020);
+echo("La edad de la persona es: ".$edad3);
+
+echo("<br><br>................................<br><br>");
+
+// arreglos que se llena con una funcion 
+$edades=array('edad1'=>calcularEdad3(1990,2020),'edad2'=>calcularEdad3(1991,2020));
+print_r($edades);
+
+
+
 
 
 
